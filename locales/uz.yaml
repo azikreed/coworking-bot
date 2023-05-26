@@ -1,0 +1,93 @@
+choose: Quyidagilardan birini tanlang
+error: ❗️ Xatolik yuz berdi
+empty: Mavjud emas
+login:
+  username: ✍️ <b>Username</b>'ni kiriting.
+  password: 🛡 <b>Parol</b>ni kiriting
+  error: ❗️ Bunday foydalanuvchi topilmadi
+  success: "✅ Mos akkaunt topildi"
+logout:
+  text: ❗️ Chindan ham akkauntdan chiqmoqchimisiz?
+menu:
+  location: 📍 Joylashuvingizni jo'nating yoki yetkazib berish manzilini tanlang
+  confirmLocation: |
+    Siz buyurtma berayotgan manzil: ${name}. Buni tasdiqlaysizmi?
+  address:
+    empty: Mavjud emas
+  product:
+    price: 💲 Narxi
+    fill: ❗️ Kamida bir dona tanlash kerak
+basket:
+  main: 📬 Savat
+  empty: 📭 Savat bo'sh
+  amount: 1️⃣ Soni
+  sum: so'm
+  total: 💵 Jami
+order:
+  phone: |
+    📞 Telefon raqamingizni quyidagi tugma orqali yoki matn ko'rinishida yuboring.\n\n<i>(Misol <code>+998998887766</code>)</i>
+
+    <i>(For example <code>+998998887766</code>)</i>
+  payment: 💰 To'lov turini tanlang
+  success: ✅ Buyurtmangiz qabul qilindi.
+  changedStatus: Sizning buyurtmangiz ${status} holatiga o'tkazildi.
+
+comment:
+  write: 📝 Sizning fikringiz biz uchun muhim!
+  done: ✅ Bildirgan fikringiz uchun tashakkur!
+language: 🇺🇿 Tilni tanlang
+
+keyboards:
+  common:
+    back: ◀️ Orqaga
+    agree: ✅ Ha
+    disagree: ❌ Yo'q
+  main:
+    menu: 🍴 Menyu
+    orders: 🛍 Mening buyurtmalarim
+    comment: ✍️ Fikr bildirish
+    settings: ⚙️ Sozlamalar
+    basket: 🛒 Savat
+    login: 🚪 Tizimga kirish
+    logout: 🚶‍♂️ Chiqish
+  basket:
+    order: 🚚 Buyurtma berish
+    cancel: ❌ Bekor qilish
+  order:
+    phone: 📲 Telefon raqamni yuborish
+  menu:
+    location: 📍 Joylashuvni yuborish
+    addresses: 🗺 Mening manzillarim
+    confirmLocation:
+      no: ❌ Yo'q
+      yes: ✅ Ha
+  product:
+    save: 📦 Savatga qo'shish
+  settings:
+    language: 🇺🇿 Tilni o'zgartirish
+  user:
+    desk: 🪑 Joy band qilish
+  admin:
+    getDb: 📊 Ma'lumotlarni olish
+    updateDb: 🔄 Ma'lumotlarni yangilash
+
+admin:
+  welcome: 👮‍♀️ Admin paneliga xush kelibsiz
+  updateDb:
+    send: ⬆️ Excel faylni yuklang
+    success: ✅ Ma'lumotlar muvaffaqiyatli yangilandi
+
+user:
+  desk:
+    number: 🔢 Parta raqamini kiriting
+    amount: 🖥 Partalar soni
+    check: ❓ Siz rostan ham ushbu partani band qilmoqchimisiz?
+    error: ⚠️ Bunday parta mavjud emas yoki bu parta hozircha band!
+    notfound: 🤷‍♂️ Partalar topilmadi yoki barcha partalar band!
+    text: parta
+    status: ✅ Muvaffaqiyatli band qilindi
+    limit: 🪫 Siz bugungi limitingizdan foydalanib bo'ldingiz!
+  send:
+    name: "👨‍🎓 Ismi va familiyasi:"
+    desk: "🖥 Parta raqami:"
+    expire: "⏳ Ushbu vaqtgacha:"

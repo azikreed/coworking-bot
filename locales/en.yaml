@@ -1,0 +1,90 @@
+choose: Choose one of these below
+error: ❗️ Something went wrong
+empty: Empty
+login:
+  username: ✍️ Enter your <b>username</b>
+  password: 🛡 Enter your <b>password</b>
+  error: ❗️ No such user found
+logout:
+  text: ❗️ Are you sure you want to log out?
+menu:
+  location: 📍 Send your location or choose a delivery address
+  confirmLocation: |
+    Address where you want to order: ${name}. Do you verify this address?
+  address:
+    empty: Empty
+  product:
+    price: 💲 Cost
+    fill: ❗️ You must select at least one
+basket:
+  main: 📬 Basket
+  empty: 📭 Basket is empty
+  amount: 1️⃣ Amount
+  sum: sum
+  total: 💵 Total
+order:
+  phone: |
+    📞 Send your phone number via the button below or in text form.
+
+    <i>(For example <code>+998998887766</code>)</i>
+  payment: 💰 Select the payment type
+  success: ✅ Your order has been received.
+  changedStatus: Your order status has been changed to ${status}.
+comment:
+  write: 📝 Your opinion is important to us!
+  done: ✅ Thank you for your feedback!
+language: 🇺🇸 Choose your language
+
+keyboards:
+  common:
+    back: ◀️ Back
+    agree: ✅ Yes
+    disagree: ❌ No
+  main:
+    menu: 🍴 Menu
+    orders: 🛍 My orders
+    comment: ✍️ Leave comment
+    settings: ⚙️ Settings
+    basket: 🛒 Basket
+    login: 🚪 Sign in
+    logout: 🚶‍♂️ Sign out
+  menu:
+    location: 📍 Send location
+    addresses: 🗺 My addresses
+    confirmLocation:
+      no: ❌ No
+      yes: ✅ Yes
+  basket:
+    order: 🚚 Order
+    cancel: ❌ Cancel
+  order:
+    phone: 📲 Send a phone number
+  product:
+    save: 📦 Add to basket
+  settings:
+    language: 🇺🇸 Change language
+  admin:
+    getDb: 📊 Get the database
+    updateDb: 🔄 Update database
+  user:
+    desk: 🪑 Booking the place
+admin:
+  welcome: 👮‍♀️ Welcome to the admin panel
+  updateDb:
+    send: ⬆️ Upload Excel file
+    success: ✅ Data updated successfully
+
+user:
+  desk:
+    number: 🔢 Enter the desk number
+    amount: 🖥 Number of desks
+    check: ❓ Are you sure you want to reserve this desk?
+    error: ⚠️ This desk does not exist or this desk is currently occupied!
+    notfound: 🤷‍♂️ No desks found or all desks are occupied!
+    text: desk
+    status: ✅ Booked successfully
+    limit: 🪫 You have used your limit for today!
+  send:
+    name: "👨‍🎓 Firstname and lastname:"
+    desk: "🖥 Desk number:"
+    expire: "⏳ Until this time:"
