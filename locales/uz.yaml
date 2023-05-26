@@ -1,6 +1,7 @@
 choose: Quyidagilardan birini tanlang
 error: ❗️ Xatolik yuz berdi
 empty: Mavjud emas
+textback: 🔙 Ortga qaytish uchun <b>◀️ Orqaga</b> tugmasini bosing
 login:
   username: ✍️ <b>Username</b>'ni kiriting.
   password: 🛡 <b>Parol</b>ni kiriting
@@ -42,7 +43,6 @@ keyboards:
     back: ◀️ Orqaga
     agree: ✅ Ha
     disagree: ❌ Yo'q
-    textback: 🔙 Ortga qaytish uchun <b>◀️ Orqaga</b> tugmasini bosing
   main:
     menu: 🍴 Menyu
     orders: 🛍 Mening buyurtmalarim

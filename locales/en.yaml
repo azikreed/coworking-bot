@@ -1,6 +1,7 @@
 choose: Choose one of these below
 error: ❗️ Something went wrong
 empty: Empty
+textback: 🔙 Click <b>◀️ Back</b> to go back
 login:
   username: ✍️ Enter your <b>username</b>
   password: 🛡 Enter your <b>password</b>

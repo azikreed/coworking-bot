@@ -33,7 +33,7 @@ scene.enter(
             pagination.handleActions(scene);
             const keyboard = keyboards.common.back(ctx);
             ctx.reply(await pagination.text(), await pagination.keyboard());
-            ctx.replyWithHTML(ctx.i18n.t("keyboards.common.textback"), keyboard);
+            ctx.replyWithHTML(ctx.i18n.t("textback"), keyboard);
         }
     },
 );
