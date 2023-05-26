@@ -42,6 +42,7 @@ keyboards:
     back: ◀️ Orqaga
     agree: ✅ Ha
     disagree: ❌ Yo'q
+    textback: 🔙 Ortga qaytish uchun <b>◀️ Orqaga</b> tugmasini bosing
   main:
     menu: 🍴 Menyu
     orders: 🛍 Mening buyurtmalarim

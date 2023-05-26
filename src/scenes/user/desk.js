@@ -31,7 +31,9 @@ scene.enter(
                 isEnabledDeleteButton: false,
             })
             pagination.handleActions(scene);
+            const keyboard = keyboards.common.back(ctx);
             ctx.reply(await pagination.text(), await pagination.keyboard());
+            ctx.replyWithHTML(ctx.i18n.t("keyboards.common.textback"), keyboard);
         }
     },
 );
@@ -66,7 +68,7 @@ scene.action(/yes_(.+)/, async (ctx) => {
     let minute = desk.updatedAt.getMinutes();
     const date = `${hour.toString().length < 2 ? +"0" + (hour + 2).toString() : +(hour + 2).toString()}:${minute.toString().length < 2 ? "0" + minute.toString() : minute.toString()}`;
     booked(desk, ctx, date);
-    cron.schedule(`${minute + 1 == 60 ? 0 : minute + 1} * * * *`, changeAvailability);
+    cron.schedule(`${minute} ${hour + 2 == 24 ? 0 : hour + 2} * * *`, changeAvailability);
     ctx.replyWithHTML(text);
     ctx.scene.enter("start");
 });
@@ -74,5 +76,9 @@ scene.action(/yes_(.+)/, async (ctx) => {
 scene.action(/no_(.+)/, (ctx) => {
     return ctx.scene.enter("user:desk");
 });
+
+scene.hears(match("keyboards.common.back"), (ctx) => {
+    return ctx.scene.enter("start");
+})
 
 module.exports = scene;

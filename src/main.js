@@ -26,8 +26,7 @@ const updateUser = async () => {
     await User.updateMany({ limit: true }, { limit: false });
 }
 
-cron.schedule(`16 17 * * *`, updateUser);
-
+cron.schedule(`0 0 * * *`, updateUser);
 
 bot.catch((err, ctx) => {
     console.log(err);
