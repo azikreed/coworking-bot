@@ -48,12 +48,13 @@ exports.generateDb = async ({
 
     usersSheet.getRow(1).eachCell(cell => cell.font = { bold: true });
 
+    //desks
     const desksSheet = workbook.addWorksheet("Partalar");
     desksSheet.columns = [
         { header: "Raqami", key: "number", width: 8 }
     ];
 
-    desks.forEach((desk) => {
+    desks.sort((a, b) =>  a.number - b.number).forEach((desk) => {
         desk.number = desk.number;
         desksSheet.addRow(desk);
     })

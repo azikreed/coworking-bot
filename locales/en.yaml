@@ -77,6 +77,7 @@ admin:
 
 user:
   desk:
+    goal: "🎯 Write down your goal for today:"
     number: 🔢 Enter the desk number
     amount: 🖥 Number of desks
     check: ❓ Are you sure you want to reserve this desk?
@@ -89,3 +90,6 @@ user:
     name: "👨‍🎓 Firstname and lastname:"
     desk: "🖥 Desk number:"
     expire: "⏳ Until this time:"
+    goal: "🎯 Goal:"
+    dear: 👨‍🎓 Dear
+    message: "⏳ Your time is up. Please make room!"

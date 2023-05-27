@@ -80,6 +80,7 @@ admin:
 
 user:
   desk:
+    goal: "🎯 Bugungi kun uchun maqsadingizni yozing:"
     number: 🔢 Parta raqamini kiriting
     amount: 🖥 Partalar soni
     check: ❓ Siz rostan ham ushbu partani band qilmoqchimisiz?
@@ -92,3 +93,6 @@ user:
     name: "👨‍🎓 Ismi va familiyasi:"
     desk: "🖥 Parta raqami:"
     expire: "⏳ Ushbu vaqtgacha:"
+    goal: "🎯 Maqsadim:"
+    dear: 👨‍🎓 Hurmatli
+    message: "⏳ Sizning vaqtingiz tugadi. Joyni bo'shatib qo'yishingizni so'raymiz!"

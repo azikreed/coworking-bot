@@ -5,6 +5,10 @@ const userSchema = new mongoose.Schema({
     phone: Number,
     username: String,
     password: String,
+    telegramId: {
+        type: Number,
+        default: null
+    },
     language: {
         type: String,
         default: 'uz'

@@ -1,6 +1,7 @@
 const { Scenes } = require("telegraf");
 const excel = require('../../utils/excel');
 const { Admin, User, Desk } = require("../../database/models");
+const keyboards = require("../../keyboards/common");
 
 const scene = new Scenes.BaseScene('admin:getDb');
 
@@ -16,6 +17,7 @@ scene.enter(async (ctx) => {
     });
 
     ctx.replyWithDocument({ source: data, filename: 'baza.xlsx' });
+    ctx.scene.enter("admin");
 });
 
 module.exports = scene;

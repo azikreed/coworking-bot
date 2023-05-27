@@ -31,14 +31,15 @@ const scene = new Scenes.WizardScene(
 
         ctx.wizard.state.password = password;
         const user = await User.findOne(ctx.wizard.state);
-        console.log("user==================", user);
 
         if (!user) {
             ctx.reply(ctx.i18n.t("login.error"))
             return ctx.scene.enter("start");
         }
+        const userWithID = await User.findOneAndUpdate({ _id: user._id }, { ...ctx.wizard.state, telegramId: ctx.chat.id })
 
-        ctx.session.user = user;
+        ctx.wizard.state = null;
+        ctx.session.user = userWithID;
         ctx.reply(ctx.i18n.t("login.success"));
         ctx.scene.enter("start");
     }
