@@ -2,6 +2,7 @@ const ExcelJS = require('exceljs');
 const { Stream } = require('stream');
 const logger = require('./logger');
 const { Admin, User, Desk } = require("../database/models");
+const random = require("randomatic");
 
 exports.generateDb = async ({
     users,
@@ -54,7 +55,7 @@ exports.generateDb = async ({
         { header: "Raqami", key: "number", width: 8 }
     ];
 
-    desks.sort((a, b) =>  a.number - b.number).forEach((desk) => {
+    desks.sort((a, b) => a.number - b.number).forEach((desk) => {
         desk.number = desk.number;
         desksSheet.addRow(desk);
     })
@@ -93,12 +94,15 @@ exports.updateDb = async (data, cb) => {
 
         let users = [];
         usersSheet.eachRow(row => {
+            let convert = row.getCell(2).value.toLowerCase().split(" ")[0][0] + row.getCell(2).value.toLowerCase().split(" ")[1][0] + row.getCell(3).value;
+            let randomPassword = random("0", 10);
+
             if (row.number > 1) {
                 users.push({
                     fullname: row.getCell(2).value,
                     phone: row.getCell(3).value,
-                    username: row.getCell(4).value,
-                    password: row.getCell(5).value,
+                    username: convert,
+                    password: randomPassword,
                 })
             }
         })
