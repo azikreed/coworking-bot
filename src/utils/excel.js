@@ -94,7 +94,7 @@ exports.updateDb = async (data, cb) => {
 
         let users = [];
         usersSheet.eachRow(row => {
-            let convert = row.getCell(2).value.toLowerCase().split(" ")[0][0] + row.getCell(2).value.toLowerCase().split(" ")[1][0] + row.getCell(3).value;
+            let convert = random("a", 3) + row.getCell(3).value;
             let randomPassword = random("0", 10);
 
             if (row.number > 1) {
